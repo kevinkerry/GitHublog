@@ -3,14 +3,14 @@ menu:
   Home: /
   GitHub: https://github.com/wzqcongcong
   Archives: /archives
-rss: /atom.xml
+#rss: /atom.xml
 
 # Content
 excerpt_link: Read More
 fancybox: true
 
 # Sidebar
-sidebar: right
+sidebar: left
 widgets:
 - tag
 - tagcloud
