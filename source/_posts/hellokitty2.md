@@ -6,6 +6,8 @@ tags: [Test]
 
 ## This is my second Hexo blog
 
+<!--more-->
+
 ![GoKu](/img/goku.jpg)
 
 > 立一业谋生，择一城终老，携一人白首。
