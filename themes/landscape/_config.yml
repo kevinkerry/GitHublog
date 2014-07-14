@@ -14,11 +14,10 @@ fancybox: true
 # Sidebar
 sidebar: left
 widgets:
-- tag
+- weibo
 - tagcloud
 - recent_posts
 - archive
-- links
 
 # Links
 links:
