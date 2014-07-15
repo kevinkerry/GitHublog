@@ -23,11 +23,29 @@
       <% } %>
     </div>
     <footer class="article-footer">
-      <a data-url="<%- post.permalink %>" data-id="<%= post._id %>" class="article-share-link"><%= __('share') %></a>
+      <div id="article-baidu-share" class="bdsharebuttonbox">
+        <a href="#" class="bds_weixin" data-cmd="weixin" title="微信"></a>
+        <a href="#" class="bds_tsina" data-cmd="tsina" title="新浪微博"></a>
+        <a href="#" class="bds_tqq" data-cmd="tqq" title="腾讯微博"></a>
+        <a href="#" class="bds_qzone" data-cmd="qzone" title="QQ空间"></a>
+        <a href="#" class="bds_sqq" data-cmd="sqq" title="QQ好友"></a>
+        <a href="#" class="bds_qq" data-cmd="qq" title="QQ收藏"></a>
+        <a href="#" class="bds_t163" data-cmd="t163" title="网易微博"></a>
+        <a href="#" class="bds_douban" data-cmd="douban" title="豆瓣"></a>
+        <a href="#" class="bds_huaban" data-cmd="huaban" title="花瓣"></a>
+        <a href="#" class="bds_twi" data-cmd="twi" title="Twitter"></a>
+        <a href="#" class="bds_fbook" data-cmd="fbook" title="Facebook"></a>
+        <a href="#" class="bds_mail" data-cmd="mail" title="邮件分享"></a>
+      </div>
+      <script>window._bd_share_config={"common":{"bdSnsKey":{},"bdText":"","bdMini":"2","bdMiniList":["mshare","weixin","tsina","tqq","qzone","qq","sqq","tqf","t163","renren","douban","huaban","taobao","tieba","kaixin001","tsohu","meilishuo","mogujie","sdo","youdao","twi","fbook","linkedin","mail","copy","print"],"bdPic":"","bdStyle":"1","bdSize":"16"},"share":{}};with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion='+~(-new Date()/36e5)];</script>
+
+      <!-- <a data-url="<%- post.permalink %>" data-id="<%= post._id %>" class="article-share-link"><%= __('share') %></a> -->
+
+      <%- partial('post/tag') %>
+      <br>
       <% if (post.comments && config.disqus_shortname){ %>
         <a href="<%- post.permalink %>#disqus_thread" class="article-comment-link">Comments</a>
       <% } %>
-      <%- partial('post/tag') %>
     </footer>
   </div>
   <% if (!index){ %>
