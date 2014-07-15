@@ -1,9 +1,9 @@
 # Header
 menu:
   Home: /
-  GitHub: https://github.com/wzqcongcong
   Archives: /archives
-  Me: /about
+  Me: /about/me.html
+  She: /about/she.html
 
 #rss: /atom.xml
 
