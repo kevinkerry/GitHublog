@@ -5,7 +5,7 @@ menu:
   Me: /about/me.html
   She: /about/she.html
 
-#rss: /atom.xml
+rss: /atom.xml
 
 # Content
 excerpt_link: Read More
