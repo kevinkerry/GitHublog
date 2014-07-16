@@ -155,11 +155,14 @@
 
 .article-tag-list-link
   &:before
-    content: "#"
+    content: "\f02b"
+    font-family: font-icon
+    padding-right: 5px
 
 .article-comment-link
   float: left
   margin-top: 10px
+  clear: left
   &:before
     content: "\f075"
     font-family: font-icon
@@ -176,7 +179,10 @@
 
 #article-baidu-share
   float: right
-  margin-top: 20px
+  margin-top: 30px
+  &:before
+    content: "\f1e0"
+    font-family: font-icon
 
 #article-nav
   clearfix()
