@@ -8,7 +8,6 @@
     "hexo-renderer-marked": "*",
     "hexo-generator-feed": "*",
     "hexo-generator-sitemap": "*",
-    "hexo-tag-emojis": "*",
-    "hexo-tag-bootstrap": "*"
+    "hexo-tag-emojis": "*"
   }
 }
