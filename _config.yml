@@ -82,6 +82,10 @@ disqus_shortname: wzqcongcong
 ## Themes: https://github.com/tommy351/hexo/wiki/Themes
 theme: landscape
 exclude_generator:
+plugins:
+  - hexo-tag-emojis
+emojis:
+  cdn: http://cdn.staticfile.org/emojify.js/0.9.0/emojis
 
 # Deployment
 ## Docs: http://hexo.io/docs/deployment.html

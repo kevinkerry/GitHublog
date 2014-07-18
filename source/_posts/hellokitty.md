@@ -10,7 +10,7 @@ tags: [Test]
 
 ![GoKu](/img/me.jpg)
 
-> 立一业谋生，择一城终老，携一人白首。
+> 立一业谋生，择一城终老，携一人白首。{% emoji heart 32 custom_class1,custom_class2 %}
 > -- [@闷骚的悟空](http://weibo.com/u/1272660443)
 
 

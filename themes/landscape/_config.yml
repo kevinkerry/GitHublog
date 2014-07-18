@@ -17,10 +17,11 @@ widgets:
 - weibo
 - tagcloud
 - recent_posts
+- links
 
 # Links
 links:
-  Weibo: http://weibo.com/u/1272660443
+  Emoji: http://www.emoji-cheat-sheet.com/
 
 # Miscellaneous
 google_analytics:
