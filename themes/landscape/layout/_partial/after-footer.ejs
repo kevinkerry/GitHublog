@@ -1,3 +1,19 @@
+<!-- duoshuo -->
+<% if (config.duoshuo_shortname){ %>
+<script>
+  var duoshuoQuery = {short_name: "<%= config.duoshuo_shortname %>"};
+  (function() {
+    var ds = document.createElement('script');
+    ds.type = 'text/javascript';
+    ds.async = true;
+    ds.src = 'http://static.duoshuo.com/embed.js';
+    ds.charset = 'UTF-8';
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(ds);
+  })();
+</script>
+<% } %>
+
+<!-- disqus
 <% if (config.disqus_shortname){ %>
 <script>
   var disqus_shortname = '<%= config.disqus_shortname %>';
@@ -13,6 +29,7 @@
   })();
 </script>
 <% } %>
+-->
 
 <!-- <link rel="stylesheet" type="text/css" href="<%- config.root %>css/rocket_up.css"> -->
 <script src="//cdn.staticfile.org/jquery/2.1.1-rc2/jquery.min.js"></script>

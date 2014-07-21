@@ -42,9 +42,16 @@
       <!-- <a data-url="<%- post.permalink %>" data-id="<%= post._id %>" class="article-share-link"><%= __('share') %></a> -->
 
       <%- partial('post/tag') %>
+      <!-- duoshuo -->
+      <% if (post.comments && config.duoshuo_shortname){ %>
+        <a href="<%- post.permalink %>#duoshuo_thread" class="ds-thread-count article-comment-link" data-thread-key="<%- post.path %>" data-count-type="comments"></a>
+      <% } %>
+
+      <!-- disqus
       <% if (post.comments && config.disqus_shortname){ %>
         <a href="<%- post.permalink %>#disqus_thread" class="article-comment-link">Comments</a>
       <% } %>
+      -->
     </footer>
   </div>
   <% if (!index){ %>
@@ -52,6 +59,12 @@
   <% } %>
 </article>
 
+<!-- duoshuo -->
+<% if (!index && post.comments && config.duoshuo_shortname){ %>
+<div id="duoshuo_thread" class="ds-thread" data-thread-key="<%- post.path %>"></div>
+<% } %>
+
+<!-- disqus
 <% if (!index && post.comments && config.disqus_shortname){ %>
 <section id="comments">
   <div id="disqus_thread">
@@ -59,3 +72,4 @@
   </div>
 </section>
 <% } %>
+-->
