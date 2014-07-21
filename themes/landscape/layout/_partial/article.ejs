@@ -44,7 +44,7 @@
       <%- partial('post/tag') %>
       <!-- duoshuo -->
       <% if (post.comments && config.duoshuo_shortname){ %>
-        <a href="<%- post.permalink %>#duoshuo_thread" class="ds-thread-count article-comment-link" data-thread-key="<%- post.path %>" data-count-type="comments"></a>
+        <a href="<%- post.permalink %>#ds-thread" class="ds-thread-count article-comment-link" data-thread-key="<%- post.path %>" data-count-type="comments"></a>
       <% } %>
 
       <!-- disqus
@@ -61,7 +61,7 @@
 
 <!-- duoshuo -->
 <% if (!index && post.comments && config.duoshuo_shortname){ %>
-<div id="duoshuo_thread" class="ds-thread" data-thread-key="<%- post.path %>"></div>
+<div class="ds-thread" data-thread-key="<%- post.path %>"></div>
 <% } %>
 
 <!-- disqus
