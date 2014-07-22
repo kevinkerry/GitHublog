@@ -3,3 +3,7 @@ date: {{ date }}
 tags:
 
 ---
+
+## {{ title }}
+
+<!--more-->
