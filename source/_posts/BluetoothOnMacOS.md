@@ -76,3 +76,6 @@ Uses RFCOMM channel.
 	
 ![CoreBluetooth](/img/bt_corebluetooth.png)
 
+``` objc
+	CBCentralManager <-> CBPeripheralManager
+```
