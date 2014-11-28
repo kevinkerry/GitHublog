@@ -41,11 +41,21 @@ Client 通过 *`NSXPCConnection`* API 来创建一个新的 connection，并指�
      
      **注意**：*XPC Service* 的启动或者退出完全由 OS 自己决定，你要做的就是启动主 app，并在代码中需要的地方请求 XPC connection。举个例子，.xpc bundle 可能是在主 app 发起 XPC 请求时才被 load 和启动 XPC Service，而不是早在之前就去启动。此外，*`Contents/XPCServices`* 目录下的 .xpc bundle 只能由所属的主 app 调用，其它 app 无法调用。
      
+     **e.g.**
+     
+		Apple Demo *"SandboxingAndNSXPCConnection"*
+	
+		Apple Demo *"AppSandboxLoginItemXPCDemo"*
+     
 * 不同 app 间的 XPC 不是通过创建 .xpc bundle 来实现的，因为前面这种方式创建的 .xpc bundle 只能被自己所属的 app 调用。而是通过创建普通的 target 来充当 XPC 的Listener。
 
 	**Listener**：在 Listener app 中，需要使用 *`[[NSXPCListener alloc] initWithMachServiceName:]`* 来创建 Listener，为其传递自行设定的 XPC service name。执行 *`resume`* 之后会立即 return，所以需要自行启动 Runloop。
 	
 	**Client**：在 Client app 中，需要使用 *`[[NSXPCConnection alloc] initWithMachServiceName:options:]`* 来创建 connection，为其传递 Listener 中指定的 XPC service name。option 用于说明你的 XPC service 是否是在 admin 权限下。
+	
+	**e.g.** [SMJobBlessXPC] [1] [MyDiskCleaner] [2] [AppleTunerUpdater] [3]
 
 
-
+[1]: https://github.com/wzqcongcong/SMJobBlessXPC
+[2]: https://github.com/wzqcongcong/MyDiskCleaner
+[3]: https://github.com/wzqcongcong/AppleTunerUpdater

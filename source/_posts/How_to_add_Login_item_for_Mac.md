@@ -26,7 +26,7 @@ tags: [Mac, Objective-C]
 
 * 该方法添加的 Login item 对用户是不可见的，在 System Preference 中也看不到。
 
-* e.g. [MyDiskCleaner] [1]
+* **e.g.** [MyDiskCleaner] [1]
 
 ### 2. SMJobBless
 
@@ -42,7 +42,7 @@ tags: [Mac, Objective-C]
 
 * 该方法添加的 Login item 对用户是可见的，可执行文件和相应的 plist 文件的位置如上所述。用户可以手动执行 *`launchctl`* 来 load/unload。该方法不仅添加了 Login item，而且还实现了提权操作，也就是说，helper app 将会以 admin 权限来运行。
 
-* e.g. [AppleTunerUpdater] [2]
+* **e.g.** [AppleTunerUpdater] [2]
 
 ### 3. OS Launch Services
 
