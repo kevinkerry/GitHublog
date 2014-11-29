@@ -1,5 +1,6 @@
 title: XPC mechanism of Mac
 date: 2014-11-28 00:44:50
+categories: 开发
 tags: [Mac, XPC]
 
 ---
@@ -53,7 +54,7 @@ Client 通过 *`NSXPCConnection`* API 来创建一个新的 connection，并指�
 	
 	**Client**：在 Client app 中，需要使用 *`[[NSXPCConnection alloc] initWithMachServiceName:options:]`* 来创建 connection，为其传递 Listener 中指定的 XPC service name。option 用于说明你的 XPC service 是否是在 admin 权限下。
 	
-	**e.g.** [SMJobBlessXPC] [1] [MyDiskCleaner] [2] [AppleTunerUpdater] [3]
+	**e.g.** [SMJobBlessXPC] [1] | [MyDiskCleaner] [2] | [AppleTunerUpdater] [3]
 
 
 [1]: https://github.com/wzqcongcong/SMJobBlessXPC

@@ -1,5 +1,6 @@
 title: How to add Login item for Mac
 date: 2014-11-27 22:35:05
+categories: 开发
 tags: [Mac, Objective-C]
 
 ---

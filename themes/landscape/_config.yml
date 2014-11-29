@@ -15,8 +15,9 @@ fancybox: true
 sidebar: left
 widgets:
 - weibo
+- category
 - tagcloud
-- recent_posts
+# - recent_posts
 - links
 
 # Links
