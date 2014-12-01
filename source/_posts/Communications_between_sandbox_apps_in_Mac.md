@@ -74,6 +74,24 @@ Sandbox App Group 表示由同一个 Developer ID 签名的 app group。每个 D
 
 **e.g.** Apple Demo *"AppSandboxLoginItemXPCDemo"*
 
+#### 4. Distributed Objects
+
+跟 XPC 类似，对 Distributed Objects 加些特殊设置，它也可以借助 Sandbox App Group 来实现 Sandbox app 间的通信。
+
+**使用条件**：
+
+* DOServer 端要使用 *`NSMachPort`* 来创建 Mach Port。
+
+* DOServer 端要使用 *`[[NSConnection alloc] initWithReceivePort: sendPort:]`* 来初始化 connection（以后需要对该 connection 设置 rootObject，也就是 DOClient 端能够访问的 DO），给它传递之前创建的 Mach Port。不要使用 *`[NSConnection defaultConnection]`*。
+
+* DOServer 端要使用 *`[[NSMachBootstrapServer sharedInstance] registerPort:name:]`* 来注册刚创建的 Mach Port，注册用的 name 必须以 Group Bundle ID 作为 prefix，后跟自定义的 port 名称。
+
+	**注意**，如果 DOServer 端位于 *`SMLoginItemSetEnabled`* 启动的 Helper app，那么定义的 Mach Port name 不能和该 Helper app 的 Bundle ID 同名，因为其 Bundle ID 已经被 Mac 自动用于注册 XPC Service name，会导致这里的 DO Mach Port name 注册失败。
+	
+* DOClient 端要使用 *`[NSConnection connectionWithRegisteredName: host:nil]`* 来连接 DOServer 端，注册 name 就用之前 DOServer 端设置的 Mach Port name。
+
+**e.g.** [MyDiskCleaner] [2]
+
 ### 除了 Sandbox App Group，还有什么？
 
 我们知道，在 iOS app 中，有 *`URL Scheme`* 这么个机制。如果某个 app 注册了某个特殊的 *`URL Scheme`*，那么其他 app 可以通过访问 URL 的形式来 launch 该 app。
