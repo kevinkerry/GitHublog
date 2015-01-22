@@ -5,6 +5,8 @@ tags: [Mac, File System]
 
 ---
 
+##### Mac File Attributes
+
 在 Mac 开发中，想要获取 file 或者 dir 的属性，有这么4种方式：
 
 <!--more-->
@@ -56,4 +58,30 @@ tags: [Mac, File System]
 * **NSURL**
 
     通过调用 NSURL 的 `getResourceValue:forKey:error:` 也可以拿到 file 的 attribute，resource key 格式为 `NSURLXXX`，详见文档。对比采用 NSFileManager，这种方式以 URL 的形式来访问该 file，拿到的 attribute 比 NSFileManager 也多。**推荐使用。**
+
+
+
+##### 这里顺便提一下关于 delete file/dir 的一点注意事项
+
+首先，NSFileManager 有一个判断 file/dir 能否删除的 api：`isDeletableFileAtPath:`，其次，还有一个负责删除的 api：`removeItemAtPath:error:`。
+
+那么问题来了，`isDeletableFileAtPath:` 和 `removeItemAtPath:error:` 的行为不太一致！
+
+`removeItemAtPath:error:` 总是能够做出正确的行为，即能删除的话就删除，不能删除的话就不会删除。但是，`isDeletableFileAtPath:` 有时候不能做出正确的判断。
+
+* 对于 file 来说，`isDeletableFileAtPath:` 总是可以做出正确的判断，这个没问题。
+
+    也就是说，根据 Apple 文档，当 file 的 parent dir 具有可写权限时，file 就是 deletable 的，不管 file 本身的权限如何。否则，就是 undeletable 的。
+
+* 对于 dir 来说，就会出现刚才说的问题。
+
+    理论上，根据 Apple 文档，除了判断 parent dir 的可写权限之外，`isDeletableFileAtPath:` 还会递归地去判断 child item，只有所有的 child item 都是 deletable 时，才会返回 YES。
+
+    但是，事实上，`isDeletableFileAtPath:` 貌似没有去递归地检查 child item。
+
+    举例说明，有这么一个 path：<user_dir>/<root_dir>/<file_no_matter_root_or_user>，path 中的名称标明了对应的权限。现在用 `isDeletableFileAtPath:` 去检查 <root_dir>。
+
+    理论上，<root_dir> 中有个 <file_no_matter_root_or_user>，而 <file_no_matter_root_or_user> 是 undeletable 的（因为它的 parent dir <root_dir> 是 root 的，普通用户没有可写权限），所以 <root_dir> 就是 undeletable 的，所以应该返回 NO。但是 `isDeletableFileAtPath:` 返回的却是 YES。此时如果调用 `removeItemAtPath:error:` 去删除 <root_dir> 时，就会出现 error，提示没有权限。也就是说，`removeItemAtPath:error:` 跟实际情况是一致的，但 `isDeletableFileAtPath:` 却做出了错误的判断。所以对于这种情况，你需要手动地去递归调用 `isDeletableFileAtPath:` 来检查 <root_dir>。
+
+    感觉好坑啊，难道打开的姿势不对~~
 
