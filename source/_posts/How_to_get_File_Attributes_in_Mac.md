@@ -5,7 +5,7 @@ tags: [Mac, File System]
 
 ---
 
-##### Mac File Attributes
+#### Mac File Attributes
 
 在 Mac 开发中，想要获取 file 或者 dir 的属性，有这么4种方式：
 
@@ -61,7 +61,7 @@ tags: [Mac, File System]
 
 
 
-##### 这里顺便提一下关于 delete file/dir 的一点注意事项
+#### 这里顺便提一下关于 delete file/dir 的一点注意事项
 
 首先，NSFileManager 有一个判断 file/dir 能否删除的 api：`isDeletableFileAtPath:`，其次，还有一个负责删除的 api：`removeItemAtPath:error:`。
 
