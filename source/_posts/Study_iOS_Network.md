@@ -11,8 +11,6 @@ tags: [iOS, Network]
 
 ---
 
-<!--more-->
-
 iOS 中处理 Network 的 API 主要是 *`NSURLSession`*，当然，基于此，*Mattt Thompson* 开发了一套更加强大易用的 *AFNetworking*。不管怎样，还是很有必要了解一下 iOS 自己的 *NSURLSession* 的。
 
 #### *NSURLSession* 的一般使用流程：
@@ -40,6 +38,10 @@ iOS 中处理 Network 的 API 主要是 *`NSURLSession`*，当然，基于此，
 		这种 session 会把控制权交给系统，正如之前一篇笔记（[*`Life Cycle`*] [1]）中讲到的那样，有个 `UIApplicationDelegate` 是专门配合这种 session 使用的，即 `(void)application:(UIApplication *)application handleEventsForBackgroundURLSession:(NSString *)identifier completionHandler:(void (^)())completionHandler`，系统首先通过这个 delegate 响应 network events 后，才会再把控制权交给你的 *`NSURLSessionDelegate`*。
 		
 		**注意**，这种 session 比前面2种多了一个 `identifier`，有了它，当 app 被系统 terminate 和 relaunch 后，系统会使用同一个 identifier 重建 background session，继续之前未完成的 network transfer。但是，这里仅限于 app 是被系统 terminate 和 relaunch，如果是用户手动退出 app，则不会去重建 session。
+		
+
+<!--more-->
+
 	
 3. **`NSURLSession`**：有了 configuration，就可以创建 session 了。session 的 init 方式决定了 network events 的 handle 方式，以及 handle 操作的执行环境是哪里。主要有2种 init 方式：
 

@@ -1,7 +1,7 @@
 title: How to add Login item for Mac
 date: 2014-11-27 22:35:05
 categories: 开发
-tags: [Mac, Objective-C]
+tags: [Mac]
 
 ---
 
@@ -9,7 +9,6 @@ tags: [Mac, Objective-C]
 
 从开发者的角度来看，可以分成两大类，**一类**是在代码中通过调用 Mac 的 API 来添加，由 Mac 来自动管理 Login item；**另一类**是开发者直接拿 File System 开刀，手动控制。
 
-<!--more-->
 
 ## 类型 1
 
@@ -28,6 +27,10 @@ tags: [Mac, Objective-C]
 * 该方法添加的 Login item 对用户是不可见的，在 System Preference 中也看不到。
 
 * **e.g.** [MyDiskCleaner] [1]
+
+
+<!--more-->
+
 
 ### 2. SMJobBless
 

@@ -9,8 +9,6 @@ tags: [Mac, Sandbox]
 
 Mac 引入了 *`Sandbox App Group`* 的机制，使得同属于一个 app group 的不同 app 间有了合适的通信方式。
 
-<!--more-->
-
 ### Sandbox App Group 是什么
 
 Sandbox App Group 表示由同一个 Developer ID 签名的 app group。每个 Developer ID 可以签名多个 Sandbox App Group，每个 Sandbox App Group 可以包含若干个 Sandbox app。
@@ -20,6 +18,10 @@ Sandbox App Group 表示由同一个 Developer ID 签名的 app group。每个 D
 **`Group Bundle ID`** := <Team-ID>.com.company.XXX，<Team-ID> 其实也可以不用，但 Apple 的标准用法是以 <Team-ID> 作为 Group Bundle ID 的 prefix。
 
 每个 Sandbox App Group 会在 *`~/Library/Group Containers`* 下生成一个对应的目录，以 Group Bundle ID 命名。该目录的结构与 Sandbox app 的 Container 目录结构相同。该目录可以被属于该 group 的所有 Sandbox app 访问，没有限制。访问该目录的方法是调用 *`[[NSFileManager defaultManager] containerURLForSecurityApplicationGroupIdentifier:]`*。
+
+
+<!--more-->
+
 
 ### Sandbox App Group 能够做什么
 

@@ -1,7 +1,7 @@
 title: Study iOS - Misc UI
 date: 2015-01-17 15:30:03
 categories: 开发
-tags: [iOS]
+tags: [iOS, UI]
 
 ---
 
@@ -10,8 +10,6 @@ tags: [iOS]
 *相关视频章节：all*
 
 ---
-
-<!--more-->
 
 之前的文章已经学习了几种 iOS 中比较大而重要的 UIView，例如 UIScrollView、UITableView 等，本篇主要了解一下其它一些比较常用的小型 UI 类型。
 
@@ -26,6 +24,10 @@ UITextView 有3个比较重要的 property，它们共同完成整个 UITextView
 * *`textContainer`*：NSTextContainer 决定了 NSTextStorage 将会布局在整个 UITextView 的哪个区域中，即 where text can be。你甚至可以通过它来指定一个 *`exclusion zones`*（例如一个 image），这样 NSTextStorage 就会围绕这个 exclusion  zones 来布局，如同 Word 中的图片环绕效果，灰常 NB。
 
 * *`layoutManager`*：前面2个 property，一个决定内容，一个决定样式，那么剩下的 NSLayoutManager 就是负责从 NSTextStorage 中获取到 text，然后将它们 lay down 到 NSTextContainer 设定的有效区域中。
+
+
+<!--more-->
+
 
 ### UITextField
 

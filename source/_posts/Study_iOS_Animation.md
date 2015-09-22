@@ -11,8 +11,6 @@ tags: [iOS, Animation]
 
 ---
 
-<!--more-->
-
 本篇提到的 Animation 主要是基于 UIView 的，并没有涉及到基于 Layer 机制的 Animation。
 
 基于 UIView 的 Animation 有以下3种：
@@ -42,6 +40,10 @@ UIView 的某些 property 的改变是可以施加 animation 的，例如：
 **注意**：animation 是在该 API 返回后开始的，而该 API 返回的时刻是 `animationsBlock` 执行完毕的时刻。**也就是说**，调用该 API 后，会立刻执行其 `animationsBlock`，执行完后就立刻返回，然后 animation 开始呈现。所以对 UIView property 的修改在 `animationsBlock` 执行完后就立即生效了，只不过 property 的变化要经过 duration 才呈现完毕。
 
 **另外**：finished 何时为 NO？如果在该 animation 开始后，又调用了该 API 对相同的 property 开始了另一个 animation，这样前一个 animation 没做完就得中断去做另一个 animation 了，这种情况下，前一个 animation 的 completionBlock 的 finished 就为 NO 了。
+
+
+<!--more-->
+
 
 ### Animation of Entire UIView
 

@@ -1,7 +1,7 @@
 title: Study iOS - UITableView
 date: 2015-01-11 14:42:21
 categories: 开发
-tags: [iOS, UITableView]
+tags: [iOS, UI]
 
 ---
 
@@ -10,8 +10,6 @@ tags: [iOS, UITableView]
 *相关视频章节：11*
 
 ---
-
-<!--more-->
 
 #### UITableView 分类
 
@@ -36,6 +34,10 @@ tags: [iOS, UITableView]
 与 Mac 上的NSTableView 不同，iOS 中的 UITableView 都是一维的，只有一列。
 
 ![UITableView](/img/Study_iOS_UITableView/11.1.UITableView.png) ![UITableView](/img/Study_iOS_UITableView/11.2.UITableView.png)
+
+
+<!--more-->
+
 
 #### UITableView 的使用
 

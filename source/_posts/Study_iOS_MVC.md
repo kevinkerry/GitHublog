@@ -1,7 +1,7 @@
 title: Study iOS - MVC
 date: 2015-01-05 19:38:55
 categories: 开发
-tags: [iOS, MVC]
+tags: [iOS]
 
 ---
 
@@ -12,8 +12,6 @@ iOS学习起步阶段，抽空看完了 Stanford 老头的 Developing Applicatio
 *相关视频章节：1*
 
 ---
-
-<!--more-->
 
 先上图！
 

@@ -1,7 +1,7 @@
 title: Study iOS - Segue
 date: 2015-01-10 23:01:35
 categories: 开发
-tags: [iOS, Segue, Navigation, TabBar, ModalView]
+tags: [iOS, UI]
 
 ---
 
@@ -10,8 +10,6 @@ tags: [iOS, Segue, Navigation, TabBar, ModalView]
 *相关视频章节：6，15，16*
 
 ---
-
-<!--more-->
 
 *`Segue`*，中文为“继续”的意思，在 iOS 开发中，其 class 为 *`UIStoryboardSegue`*，用于 storyboard 中不同 UIViewController 之间的转场，即从一个 UIViewController scene 转场到另一个 UIViewController scene。你可以从一个 UIControl、UIBarItem、UIView、UIViewController 等等，向另一个 UIViewController 建立 Segue。
 
@@ -56,6 +54,10 @@ tags: [iOS, Segue, Navigation, TabBar, ModalView]
 	**更要注意**，prepareForSegue 在执行的时候，destination UIViewController 中的 outlet 尚未 set，因为 prepareForSegue 做的事等价于帮助 destination UIViewController 去 init。而 outlet set 是在 init 之后，viewDidLoad 之前做的。参见 [Life Cycle] [2]。
 	
 4. **系统为你呈现 destination UIViewController**
+
+
+<!--more-->
+
 
 ### Segue 分类
 

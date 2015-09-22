@@ -9,8 +9,6 @@ tags: [Mac, XPC]
 
 XPC 机制是通过 *`NSXPCConnection`* 作为 channel 来通信的，每个 *`NSXPCConnection`* 有 *Client* 和 *Listener* 两个 endpoint。
 
-<!--more-->
-
 ### 1. XPC 角色
 
 #### Listener
@@ -30,6 +28,10 @@ Client 通过 *`NSXPCConnection`* API 来创建一个新的 connection，并指�
 *`NSXPCConnection`* 的发起是单向的，只能由 Client 端到 Listener 端，因为每一个发起的 connection 必须要由 Listener 端通过 *`NSXPCListenerDelegate`* 函数来决定是否要进行响应。但 Client 和 Listener 都可以有自己的 *`exportedObject`* 和 *`remoteObjectProxy`*，在 connect 之后可以相互访问对方，一方的 *`exportedObject`* 对应另一方的 *`remoteObjectProxy`*。参见 Apple 文档中的图示。
 
 **注意**：不管是 Client 还是 Listener，设置自己的 *`exportedObject`* 和 *`remoteObjectProxy`* 必须要先于调用 *`resume`*。
+
+
+<!--more-->
+
 
 ### 2. XPC 搭建
 

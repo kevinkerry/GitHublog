@@ -1,7 +1,7 @@
 title: Study iOS - UIView
 date: 2015-01-06 21:23:11
 categories: 开发
-tags: [iOS, UIView]
+tags: [iOS, UI]
 
 ---
 
@@ -10,8 +10,6 @@ tags: [iOS, UIView]
 *相关视频章节：7*
 
 ---
-
-<!--more-->
 
 ### UIView 的 init
 
@@ -30,6 +28,10 @@ tags: [iOS, UIView]
 ![Coordinate](/img/Study_iOS_UIView/7.1.Coordinate.png)
 
 ![Coordinate](/img/Study_iOS_UIView/7.2.Coordinate.png)
+
+
+<!--more-->
+
 
 ### Draw
 

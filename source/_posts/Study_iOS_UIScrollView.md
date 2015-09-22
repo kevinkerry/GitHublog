@@ -1,7 +1,7 @@
 title: Study iOS - UIScrollView
 date: 2015-01-11 13:46:10
 categories: 开发
-tags: [iOS, UIScrollView]
+tags: [iOS, UI]
 
 ---
 
@@ -11,8 +11,6 @@ tags: [iOS, UIScrollView]
 
 ---
 
-<!--more-->
-
 **`UIScrollView`** 是 iOS 中很基础很重要的一种 UIView，用于呈现远大于 app window 大小的 content area，用户通过 *`swiping`* 手势可以在 content area 中进行 scroll，通过 *`pinching`* 手势可以进行 content 的 zoom。就像是拿着一个放大镜在四处移动着观察一副很大的地图。
 
 UIScrollView 也是很多其它重要 UIView 的 super class，例如 [*`UITableView`*] [1]、*`UICollectionView`*、[*`UITextView`*] [2] 等等。
@@ -20,6 +18,10 @@ UIScrollView 也是很多其它重要 UIView 的 super class，例如 [*`UITable
 #### 创建 UIScrollView
 
 通过 Storyboard 或者代码中通过 alloc initWithFrame。
+
+
+<!--more-->
+
 
 #### 使用 UIScrollView
 

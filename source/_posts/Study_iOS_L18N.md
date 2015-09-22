@@ -1,7 +1,7 @@
 title: Study iOS - L18N
 date: 2015-01-18 13:35:11
 categories: 开发
-tags: [iOS, L18N]
+tags: [iOS, UI]
 
 ---
 
@@ -10,8 +10,6 @@ tags: [iOS, L18N]
 *相关视频章节：18*
 
 ---
-
-<!--more-->
 
 L18N 主要涉及2方面：Xcode + code。
 
@@ -34,6 +32,10 @@ L18N 主要涉及2方面：Xcode + code。
 	![L18N](/img/Study_iOS_L18N/18.3.L18N.png)
 
 	**注意**，当你从 *`Bundle`* 中获取某个文件的 path 时，其搜索顺序是：先 bundle 的 top-level 层，后 .lproj 层。
+	
+
+<!--more-->
+
 
 ### Locale
 

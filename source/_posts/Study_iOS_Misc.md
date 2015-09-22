@@ -11,8 +11,6 @@ tags: [iOS]
 
 ---
 
-<!--more-->
-
 #### NSObject
 
 * `(NSString *)description`：当你自己实现一个 myClass 时，如果实现了 `(NSString *)description` 这个函数，那么你就可以利用 `NSLog(@"%@", myClassInstance)` 来输出 description 的内容了，这里的 *`%@`* 会被替换成 `[myClassInstance description]`。
@@ -30,6 +28,10 @@ tags: [iOS]
 * 给控件（例如 button 的 title）设定字体的最佳方式：`UIFont *font = [UIFont systemFontOfSize:(CGFloat)pointSize]`
 
 	**注意**，preferredFontForTextStyle: 也可以用于设定控件字体，但反过来 systemFontOfSize: 却不能用于设定 content 字体。
+	
+	
+<!--more-->
+
 	
 #### NSNotification
 
