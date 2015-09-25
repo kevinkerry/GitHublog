@@ -33,6 +33,15 @@
   <%- css('font-awesome/css/font-awesome.min') %>
   <%- partial('google-analytics') %>
   <%- partial('google_site_verification') %>
+  <script>
+  var _hmt = _hmt || [];
+  (function() {
+    var hm = document.createElement("script");
+    hm.src = "//hm.baidu.com/hm.js?f927b4d849de0fa8e031f36bf6a21e78";
+    var s = document.getElementsByTagName("script")[0]; 
+    s.parentNode.insertBefore(hm, s);
+  })();
+  </script>
   <% if( theme.customstylesheet ){ %>
     <%- css('css/'+theme.customstylesheet) %>
   <% } %>
