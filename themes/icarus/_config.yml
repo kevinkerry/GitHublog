@@ -45,7 +45,7 @@ cdn: #If your site loads slowly change it to "google" , because "useso" is slow 
 
 # Miscellaneous
 google_site_verification:
-google_analytics:
+google_analytics: UA-58630641-1
 favicon: favicon.ico
 twitter:
 google_plus:
