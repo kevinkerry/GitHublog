@@ -18,7 +18,7 @@ since: 1987 # The start year showing in your copyright section.
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
-url: http://wzqcongcong.github.io
+url: http://hi.zongquan.wang
 root: /
 permalink: :year/:month/:day/:title/
 permalink_defaults:
