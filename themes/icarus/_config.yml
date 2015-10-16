@@ -30,6 +30,7 @@ thumbnail: true
 
 # Contacts
 contacts:
+  send: mailto:wzqcongcong@sina.com
   github: http://github.com/wzqcongcong
   twitter: https://twitter.com/wzqcongcong
   # facebook: '#'
