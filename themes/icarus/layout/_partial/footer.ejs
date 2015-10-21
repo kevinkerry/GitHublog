@@ -7,5 +7,12 @@
       &copy; <% if (config.since && config.since != date(new Date(), 'YYYY')){ %><%= config.since %> - <% } %><%= date(new Date(), 'YYYY') %> <%= config.author || config.title %><br>
       Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>. Theme by <a href="http://github.com/ppoffice">PPOffice</a>
     </div>
+    <div style="display: none">
+      <% for (i = 1; i <= 4; ++i) { %>
+      	<% idIndex = "favicon_" + i %>
+      	<% srcIndex = "/favicon." + i + ".ico" %>
+        <img id=<%= idIndex %> src=<%= srcIndex %>>
+      <% } %>
+    </div>
   </div>
 </footer>

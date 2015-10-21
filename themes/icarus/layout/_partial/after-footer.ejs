@@ -34,3 +34,17 @@
 <% } %>
 
 <%- js('js/script') %>
+<%- js('js/favico') %>
+
+<script type="text/javascript">
+  $(document).ready(function() {
+    var favicon = new Favico();
+    var index = -1;
+    window.setInterval(function() {
+      var random = Math.floor(Math.random() * 4);
+      index = (index + 1) % 4;
+      var image = document.getElementById('favicon_' + (index + 1));
+      favicon.image(image);
+    }, 500);
+  });
+</script>
