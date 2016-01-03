@@ -1,4 +1,4 @@
 
 ## GitHub Blog ##
 
-create my personal GitHub Blog Site [wzqcongcong.github.io](https://wzqcongcong.github.io)
+create my personal GitHub Blog Site [hi.zongquan.wang](https://hi.zongquan.wang)
