@@ -7,6 +7,8 @@ tags: [iOS]
 
 OS X 10.10+ & Xcode 7+
 
+[https://github.com/wzqcongcong/iOSOpenDev] [1]
+
 -----
 
 1. **Dependency**
@@ -35,11 +37,11 @@ OS X 10.10+ & Xcode 7+
  
  * `git clone --recursive https://github.com/kokoabim/iOSOpenDev.git $iOSOpenDevPath`
 
- * copy the **templates** dir into *$iOSOpenDevPath*
+ * copy the [**templates**] [1] dir into *$iOSOpenDevPath*
 
  3.3. setup **Xcode**
 
- * copy the **.xcspec** files into */Applications/Xcode/Content/Developer/Platforms/[PLATFORM_PATH]/Developer/Library/Xcode/Specifications*
+ * copy the [**.xcspec**] [1] files into */Applications/Xcode/Content/Developer/Platforms/[PLATFORM_PATH]/Developer/Library/Xcode/Specifications*
     
  * mkdir of */Applications/Xcode/Content/Developer/Platforms/[PLATFORM_PATH]/Developer/usr/bin*
 	
@@ -59,3 +61,6 @@ OS X 10.10+ & Xcode 7+
  
  * `ln -fhs $iOSOpenDevPath/templates ~/Library/Developer/Xcode/Templates/iOSOpenDev`
  * open **TemplateInfo.plist** of **Base.xctemplate** and **Empty Project.xctemplate** with Xcode, then set the value of user defined key *[iOSOpenDevPath]* to *$HOME/Tools/iOS/iOSOpenDev*.
+
+
+[1]: https://github.com/wzqcongcong/iOSOpenDev
