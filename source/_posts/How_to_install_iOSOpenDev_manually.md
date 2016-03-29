@@ -7,19 +7,21 @@ tags: [iOS]
 
 OS X 10.10+ & Xcode 7+
 
+-----
+
 1. **Dependency**
 
  `brew install ldid dpkg`
 
 2. **Theos**
 
- [Wiki] (https://github.com/theos/theos/wiki)
+ [Wiki](https://github.com/theos/theos/wiki)
     
- [Setup] (http://iphonedevwiki.net/index.php/Theos/Setup)
+ [Setup](http://iphonedevwiki.net/index.php/Theos/Setup)
 
 3. **iOSOpenDev**
 
- [Wiki] (https://github.com/kokoabim/iOSOpenDev/wiki)
+ [Wiki](https://github.com/kokoabim/iOSOpenDev/wiki)
 
  3.1. update **.zshrc**
  
