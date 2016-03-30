@@ -1,7 +1,7 @@
 title: Study iOS - Segue
 date: 2015-01-10 23:01:35
 categories: 开发
-tags: [iOS, UI]
+tags: [iOS]
 
 ---
 

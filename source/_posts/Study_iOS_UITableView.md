@@ -1,7 +1,7 @@
 title: Study iOS - UITableView
 date: 2015-01-11 14:42:21
 categories: 开发
-tags: [iOS, UI]
+tags: [iOS]
 
 ---
 

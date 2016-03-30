@@ -1,7 +1,7 @@
 title: How to install iOSOpenDev manually
 date: 2016-03-29 23:30:35
 categories: 开发
-tags: [iOS]
+tags: [Xcode]
 
 ---
 

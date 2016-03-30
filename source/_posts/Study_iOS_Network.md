@@ -1,7 +1,7 @@
 title: Study iOS - Network
 date: 2015-01-07 10:15:27
 categories: 开发
-tags: [iOS, Network]
+tags: [iOS]
 
 ---
 

@@ -1,7 +1,7 @@
 title: Study iOS - L18N
 date: 2015-01-18 13:35:11
 categories: 开发
-tags: [iOS, UI]
+tags: [iOS]
 
 ---
 

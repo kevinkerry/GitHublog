@@ -1,7 +1,7 @@
 title: Study iOS - Hardware
 date: 2015-01-18 15:42:25
 categories: 开发
-tags: [iOS, Hardware]
+tags: [iOS]
 
 ---
 

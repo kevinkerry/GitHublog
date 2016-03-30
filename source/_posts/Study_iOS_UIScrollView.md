@@ -1,7 +1,7 @@
 title: Study iOS - UIScrollView
 date: 2015-01-11 13:46:10
 categories: 开发
-tags: [iOS, UI]
+tags: [iOS]
 
 ---
 

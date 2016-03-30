@@ -1,7 +1,7 @@
 title: Study iOS - UIView Animation
 date: 2015-01-06 22:29:21
 categories: 开发
-tags: [iOS, Animation]
+tags: [iOS]
 
 ---
 

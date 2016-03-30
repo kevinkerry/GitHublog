@@ -1,7 +1,7 @@
 title: Study iOS - Misc UI
 date: 2015-01-17 15:30:03
 categories: 开发
-tags: [iOS, UI]
+tags: [iOS]
 
 ---
 

@@ -1,7 +1,7 @@
 title: XPC mechanism of Mac
 date: 2014-11-28 00:44:50
 categories: 开发
-tags: [Mac, XPC]
+tags: [Mac]
 
 ---
 

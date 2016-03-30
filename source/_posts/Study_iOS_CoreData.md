@@ -1,7 +1,7 @@
 title: Study iOS - CoreData
 date: 2015-01-11 16:51:58
 categories: 开发
-tags: [iOS, CoreData]
+tags: [iOS]
 
 ---
 

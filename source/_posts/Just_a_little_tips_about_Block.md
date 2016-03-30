@@ -1,7 +1,7 @@
 title: Just a little tips about Objective-C Block
 date: 2014-12-03 17:35:36
 categories: 开发
-tags: [Mac, Block]
+tags: [Mac]
 
 ---
 
