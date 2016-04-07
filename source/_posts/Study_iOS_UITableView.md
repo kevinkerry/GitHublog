@@ -9,6 +9,8 @@ tags: [iOS]
 
 *相关视频章节：11*
 
+<!--more-->
+
 ---
 
 #### UITableView 分类
@@ -18,8 +20,6 @@ tags: [iOS]
 * *`dynamic`*：在 storyboard 中设定 prototype，在代码中 load 内容。*（本篇主要涉及 dynamic NSTableView）*
 
 * *`static`*：完全在 storyboard 中设定。
-
-
 
 按样式分：
 
@@ -34,10 +34,6 @@ tags: [iOS]
 与 Mac 上的NSTableView 不同，iOS 中的 UITableView 都是一维的，只有一列。
 
 ![UITableView](/img/Study_iOS_UITableView/11.1.UITableView.png) ![UITableView](/img/Study_iOS_UITableView/11.2.UITableView.png)
-
-
-<!--more-->
-
 
 #### UITableView 的使用
 

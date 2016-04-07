@@ -9,6 +9,8 @@ tags: [Xcode]
 
 当 build 完成后，我们会关注 2 个与 **Product Files** 有关的 settings ：
 
+<!--more-->
+
 **`$BUILT_PRODUCTS_DIR`** 和 **`$TARGET_BUILD_DIR`**
 
 这 2 个 settings 决定了我们 build 出来的 Products 被放置到了哪里。
@@ -32,8 +34,6 @@ tags: [Xcode]
 -----
 
 #### 下面就看一下这 2 个路径是如何设置的 ####
-
-<!--more-->
 
 **首先解释一些相关的 settings：**
 

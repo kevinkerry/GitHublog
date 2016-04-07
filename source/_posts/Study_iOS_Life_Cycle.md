@@ -9,6 +9,8 @@ tags: [iOS]
 
 *相关视频章节：5，17*
 
+<!--more-->
+
 ---
 
 这里提到的 Life Cycle 主要包括2方面：
@@ -16,6 +18,7 @@ tags: [iOS]
 * Application 的 Life Cycle
 
 * UIViewController 的 Life Cycle
+
 
 ### Application 的 Life Cycle
 
@@ -32,10 +35,6 @@ Application 的 Life Cycle 是靠一些 *`UIApplicationDelegate`* 函数来控�
 * `(void)applicationWillResignActive:(UIApplication *)application`：app 变得 not active，也就是说，app 的 UI 无法接收 events 了。这通常是发生在切换到其它 app 的时候，或者双击 Home 的时候，或者接听电话的时候。总之就是，该 app 的 UI 已经不再是 iOS 的 first responder UI 了。伴随该 delegate 有一个 notification *`UIApplicationWillResignActiveNotification`*。
 
 	通常利用以上2个 delegate，来暂停并保存当前 UI 状态，然后在之后重新恢复 UI 状态。
-	
-	
-<!--more-->
-
 
 * `(void)applicationDidEnterBackground:(UIApplication *)application`：app 进入 background。**注意**，当发生 applicationWillResignActive 后，并不一定会发生 applicationDidEnterBackground，例如，运行该 app 时突然双击 Home 或者接听电话，此时，只会发生applicationWillResignActive。只有等到该 app 进入 background 后，例如已经切换到其它 app 后，才会发生 applicationDidEnterBackground。**此外**，iOS 留给该 delegate 的运行时间很短，如果想在这里做些费时的操作，可以借助 *`beginBackgroundTaskWithExpirationHandler:`*。伴随该 delegate 有一个 notification *`UIApplicationDidEnterBackgroundNotification`*。
 

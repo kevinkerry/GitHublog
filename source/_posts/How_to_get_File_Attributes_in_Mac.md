@@ -9,6 +9,9 @@ tags: [Mac]
 
 在 Mac 开发中，想要获取 file 或者 dir 的属性，有这么4种方式：
 
+<!--more-->
+
+
 * **Linux C api**
 
     `int lstat(const char *restrict path, struct stat *restrict buf)`
@@ -46,9 +49,6 @@ tags: [Mac]
     **注意**，这种方式是基于 Spotlight 获取到了这些 metadata，否则拿到的值可能就是 NULL 了。
 
     **另外**，在 terminal 中，这种方式也有相应的命令 `mdls` 可以使用。
-
-
-<!--more-->
 
 
 * **NSFileManager**

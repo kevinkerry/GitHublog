@@ -7,6 +7,8 @@ tags: [iOS]
 
 iOS学习起步阶段，抽空看完了 Stanford 老头的 Developing Applications for iOS 系列视频，挺不错的，浅显易懂。打算把“观后感”做成笔记，挑些重要的点，理一理，省得以后还要重新看整个教程的文档。
 
+<!--more-->
+
 ### Developing Applications for iOS 观后感系列：MVC 设计模式
 
 *相关视频章节：1*

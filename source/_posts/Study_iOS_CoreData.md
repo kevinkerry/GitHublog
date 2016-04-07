@@ -9,6 +9,8 @@ tags: [iOS]
 
 *相关视频章节：12，13*
 
+<!--more-->
+
 ---
 
 **`CoreData`** 是 iOS 提供的一套用于管理 app 的 Model 的 framework，它就像是个 object database，支持对 object 的各种操作：add、delete、query、undo、redo、autosave 等，灰常 NB。但它并不是 database 的某种实现，你可以基于持久化文件（如 sqlite 等）来使用 CoreData，也可以完全基于内存来使用。
@@ -40,10 +42,6 @@ tags: [iOS]
 	**注意**，以后当我们修改了 Model 的 Entity 后，需要重新执行一遍这一步，来更新这些 NSManagedObject subclass。这也意味着，这些 .h 和 .m 会被重新生成。所以这里常常使用的一个技巧是，为这些 NSManagedObject subclass 添加 *`category`*，在 category 中创建一些额外的函数供 NSManagedObject subclass 使用，这样以后更新 NSManagedObject subclass 时，只有最原本的 .h 和 .m 文件被重新生成，而不会影响到我们的 category。
 	
 Xcode 这边基本就完成了，下面开始进入 code。
-
-
-<!--more-->
-
 
 ### NSManagedObjectContext
 

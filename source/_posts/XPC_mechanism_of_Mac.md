@@ -7,6 +7,8 @@ tags: [Mac]
 
 在 Mac 中，进程间的通信机制，除了 *`NSDistributedNotification`*、*`Distributed Objects`*，还有 XPC。XPC 可以在同一个 app 的不同 bundle 间使用，也可以在不同的 app 间使用。
 
+<!--more-->
+
 XPC 机制是通过 *`NSXPCConnection`* 作为 channel 来通信的，每个 *`NSXPCConnection`* 有 *Client* 和 *Listener* 两个 endpoint。
 
 ### 1. XPC 角色
@@ -29,10 +31,6 @@ Client 通过 *`NSXPCConnection`* API 来创建一个新的 connection，并指�
 
 **注意**：不管是 Client 还是 Listener，设置自己的 *`exportedObject`* 和 *`remoteObjectProxy`* 必须要先于调用 *`resume`*。
 
-
-<!--more-->
-
-
 ### 2. XPC 搭建
 
 * 同一个 app 中使用的 XPC 称为 XPC Service，在 Xcode 中可以创建 *XPC Service* 这种 target，生成的 bundle 是 .xpc。在主 app 中需要将 .xpc bundle deploy 到自己的 *`Contents/XPCServices`* 目录下，Mac 会在该目录中寻找相应的 .xpc bundle 去 load。
@@ -46,9 +44,9 @@ Client 通过 *`NSXPCConnection`* API 来创建一个新的 connection，并指�
      
      **e.g.**
      
-		Apple Demo *"SandboxingAndNSXPCConnection"*
+		Apple's sample code: [SandboxingAndNSXPCConnection]
 	
-		Apple Demo *"AppSandboxLoginItemXPCDemo"*
+		Apple's sample code: [AppSandboxLoginItemXPCDemo]
      
 * 不同 app 间的 XPC 不是通过创建 .xpc bundle 来实现的，因为前面这种方式创建的 .xpc bundle 只能被自己所属的 app 调用。而是通过创建普通的 target 来充当 XPC 的Listener。
 

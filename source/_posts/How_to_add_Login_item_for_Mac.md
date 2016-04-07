@@ -7,6 +7,8 @@ tags: [Mac]
 
 在 Mac OS 中，有许多机制可以用于添加 Login item，不同的 Login item 类型需要用不同的方式来添加，每种方式都有自己的工作流程，应用范围，以及最终的表现效果。
 
+<!--more-->
+
 从开发者的角度来看，可以分成两大类，**一类**是在代码中通过调用 Mac 的 API 来添加，由 Mac 来自动管理 Login item；**另一类**是开发者直接拿 File System 开刀，手动控制。
 
 
@@ -27,10 +29,6 @@ tags: [Mac]
 * 该方法添加的 Login item 对用户是不可见的，在 System Preference 中也看不到。
 
 * **e.g.** [MyDiskCleaner] [1]
-
-
-<!--more-->
-
 
 ### 2. SMJobBless
 
@@ -69,8 +67,10 @@ tags: [Mac]
 
 ---
 
-	对于 non Sandbox app 来说，上述4种方法都是可行的。
-	对于 Sandbox app 来说，方法1适用，方法4写入 *`~/Library/LaunchAgents`* 也适用，其它方法不适用。
+总结：
+
+对于 non Sandbox app 来说，上述4种方法都是可行的。
+对于 Sandbox app 来说，方法1适用，方法4写入 *`~/Library/LaunchAgents`* 也适用，其它方法不适用。
 
 
 [1]: https://github.com/wzqcongcong/MyDiskCleaner

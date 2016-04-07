@@ -9,6 +9,8 @@ tags: [iOS]
 
 *相关视频章节：all*
 
+<!--more-->
+
 ---
 
 #### NSObject
@@ -28,10 +30,6 @@ tags: [iOS]
 * 给控件（例如 button 的 title）设定字体的最佳方式：`UIFont *font = [UIFont systemFontOfSize:(CGFloat)pointSize]`
 
 	**注意**，preferredFontForTextStyle: 也可以用于设定控件字体，但反过来 systemFontOfSize: 却不能用于设定 content 字体。
-	
-	
-<!--more-->
-
 	
 #### NSNotification
 

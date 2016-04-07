@@ -9,6 +9,8 @@ tags: [iOS]
 
 *相关视频章节：7*
 
+<!--more-->
+
 ---
 
 ### UIView 的 init
@@ -28,10 +30,6 @@ tags: [iOS]
 ![Coordinate](/img/Study_iOS_UIView/7.1.Coordinate.png)
 
 ![Coordinate](/img/Study_iOS_UIView/7.2.Coordinate.png)
-
-
-<!--more-->
-
 
 ### Draw
 

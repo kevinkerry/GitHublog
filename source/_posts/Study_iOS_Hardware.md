@@ -9,6 +9,8 @@ tags: [iOS]
 
 *相关视频章节：14、17*
 
+<!--more-->
+
 ---
 
 关于 iOS device 的 hardware，本篇主要了解2个方面：CoreLocation + CoreMotion
@@ -58,10 +60,6 @@ tags: [iOS]
 	**注意**，当你不再需要 monitor 时，不要忘了 stop monitor。
 
 	**注意**，即使 app not running，这些 monitor 也还是能够 work 的。想要在 background 模式下继续 monitor，需要在 project 中设置一下，类似于 background fetch 的设置。当 delegate 触发后，app 就会被启动。这种情况下，`application:didFinishLaunchingWithOption:` 的 option dictionary 中就会包含一个 key `UIApplicationLaunchOptionsLocationKey`。
-	
-
-<!--more-->
-
 
 ### CoreMotion
 

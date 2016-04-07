@@ -19,12 +19,12 @@ gravatar: false # whether to use gravatar with the email
 showlogo: false # whether to show the logo in the header
 
 # Sidebar
-sidebar: right # set to false if you don't want a sidebar
+sidebar: false # set to false if you don't want a sidebar
 widgets:
 - recent_posts
 - category
 - tag
-- tagcloud
+# - tagcloud
 - archive
 thumbnail: true
 
