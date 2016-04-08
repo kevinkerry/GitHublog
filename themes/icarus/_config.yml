@@ -44,6 +44,10 @@ links:
 # CDN
 cdn: #If your site loads slowly change it to "google" , because "useso" is slow out of China. Empty this to use staticfile.
 
+# Donate
+donate: true
+donate_message: 打赏
+
 # Miscellaneous
 google_site_verification:
 google_analytics: UA-58630641-1

@@ -31,6 +31,9 @@
         <%- post.content %>
       <% } %>
     </div>
+    <% if (!index && theme.donate){ %>
+      <%- partial('donate') %>
+    <% } %>
     <footer class="article-footer">
       <% if (post.comments && config.disqus_shortname){ %>
         <a href="<%- post.permalink %>#disqus_thread" class="article-comment-link"><%= __('article.comments') %></a>
