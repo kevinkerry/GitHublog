@@ -53,12 +53,13 @@ if sidebar
   _sidebar-column = sidebar-column
 else
   _sidebar-column = 0
-  main-column = 10
 
 if profile
   _profile-column = profile-column
 else
   _profile-column = 0
+
+if _sidebar-column is 0 and _profile-column is 0
   main-column = 10
 
 // Grids
