@@ -25,7 +25,7 @@ widgets:
 - category
 - tag
 # - tagcloud
-- archive
+# - archive
 thumbnail: true
 
 # Contacts
